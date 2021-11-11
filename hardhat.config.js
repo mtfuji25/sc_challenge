@@ -1,9 +1,9 @@
-require('dotenv').config();
+require("dotenv").config();
 require("@nomiclabs/hardhat-waffle");
 require("@nomiclabs/hardhat-truffle5");
-require('solidity-coverage');
-require('@nomiclabs/hardhat-solhint');
-require('hardhat-gas-reporter');
+require("solidity-coverage");
+require("@nomiclabs/hardhat-solhint");
+require("hardhat-gas-reporter");
 
 module.exports = {
   solidity: {
@@ -11,13 +11,13 @@ module.exports = {
     settings: {
       optimizer: {
         enabled: true,
-        runs: 200
-      }
-    }
+        runs: 200,
+      },
+    },
   },
   gasReporter: {
-    currency: 'USD',
+    currency: "USD",
     gasPrice: 120,
-    enabled: !!process.env.GAS_REPORT
-  }
+    enabled: !!process.env.GAS_REPORT,
+  },
 };

@@ -53,7 +53,7 @@ interface IERC998TopDownERC20 {
     ) external;
 }
 
-interface IERC998ERC20TopDownEnumerable {
+interface IERC998TopDownERC20Enumerable {
     // Functions
     function totalERC20Contracts(uint256 _tokenId)
         external
